@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./style.css">
+        <title>Регистрация на Квиддич</title>
+    </head>
+    <body>
+        <form id="form" class="form-register" method="GET" action="">
+            <fieldset>
+                <ul class="form-style">
+                    <li><label>ФИО <span class="required-field">*</span></label>
+                        <input type="text" id="last-name" name="text-username" class="text-username" placeholder="Фамилия" autofocus autocomplete="off" > <input type="text" id="first-name" name="text-username" class="text-username" placeholder="Имя" autocomplete="off" ></li>
+                    <li>
+                        <label>Факультет <span class="required-field">*</span></label>
+                        <select name="faculty" class="select-faculty" id="faculty">
+                            <option value="">Выберите факультет</option>
+                            <option value="1" id="faculty-gryffindor">Гриффиндор</option>
+                            <option value="2" id="faculty-slytherin">Слизерин</option>
+                            <option value="3" id="faculty-ravenclaw">Когтевран</option>
+                            <option value="4" id="faculty-hufflepuff">Пуффендуй</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label>Любимый мяч <span class="required-field">*</span></label>
+                        <input type="radio" id="fave-ball-quaffle" name="fave-ball" class="radio-fave-ball" value="quaffle">Квоффл<br>
+                        <input type="radio" id="fave-ball-bludger" name="fave-ball" class="radio-fave-ball" value="bludger">Бладжер<br>
+                        <input type="radio" id="fave-ball-snitch" name="fave-ball" class="radio-fave-ball" value="snitch">Снитч<br>
+                    </li>
+                    <li>
+                        <label>Позиция на поле <span class="required-field">*</span></label>
+                        <input type="checkbox" id="field-position-chaser" name="field-position" class="checkbox-field-position" value="chaser">Охотник<br>
+                        <input type="checkbox" id="field-position-beater" name="field-position" class="checkbox-field-position" value="beater">Загонщик<br>
+                        <input type="checkbox" id="field-position-keeper" name="field-position" class="checkbox-field-position" value="keeper">Вратарь<br>
+                        <input type="checkbox" id="field-position-seeker" name="field-position" class="checkbox-field-position" value="seeker">Ловец<br>
+                    </li>
+                    <li><label>Фото <span class="required-field">*</span></label>
+                        <img width="300" height="300" id="photo">
+                        <input type="file" id="file">
+                        <span id="file-error-message" class="message-hidden error-message">Неверный тип файла</span>
+                    </li>
+                    <li><span class="message-hidden error-message" id="last-name-error-message">Внесите фамилию</span></li>
+                    <li><span class="message-hidden error-message" id="first-name-error-message">Внесите имя</span></li>
+                    <li><span class="message-hidden error-message" id="faculty-error-message">Выберите факультет</span></li>
+                    <li><span class="message-hidden error-message" id="ball-error-message">Выберите любимый мяч</span></li>
+                    <li><span class="message-hidden error-message" id="field-position-error-message">Выберите позицию на поле</span></li>
+                    <li><span class="message-hidden error-message" id="add-file-error-message">Загрузите фото</span></li>
+                    <li>
+                        <button type="submit" value="submit" class="button-register" id="register">Зарегистрироваться</button>
+                    </li>
+                </ul>
+            </fieldset>
+        </form>
+
+        <script type="text/javascript" src="./script.js"></script>
+    </body>
+</html>
